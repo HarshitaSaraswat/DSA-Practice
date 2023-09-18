@@ -19,12 +19,34 @@ int binary_search(int arr[],int n,int target){
     }
     return -1;
 }
+int first_occurence(int arr[],int n, int target){
+    int start=0;
+    int end=n-1;
+    int mid=(start+end)/2;
+    int ans=-1;
+
+    while(start<=end){
+        if(arr[mid]==target){
+            ans=mid;
+            end=mid-1;
+        }
+        else if(arr[mid]<target){
+            start=mid+1;
+        }
+        else if(arr[mid>target]){
+            end=mid-1;
+        }
+        mid=(start+end)/2;
+    }
+    return ans;
+
+}
 int main(){
 
-    int arr[]={10,20,30,40,50,60,70,80};
+    int arr[]={10,30,30,30,30,60,70,80};
     int n=8;
-    int target=90;
-    int ans_index=binary_search(arr,n,target);
+    int target=30;
+    int ans_index=first_occurence(arr,n,target);
 
     if(ans_index==-1){
         cout<<"element not found"<<endl;
