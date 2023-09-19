@@ -19,12 +19,14 @@ int missing_element(int arr[],int n){
         }
         mid= (start +end)/2;
     }
+    if(ans+1==0)
+        ans=n+1;
     return ans+1;
 }
 
 int main(){
-    int arr[]={1,2,3,4,6,7,8,9};
-    int n=8;
+    int arr[]={1,2,3,4,5,6,7,8};
+    int n=9;
     int ans_missing=missing_element(arr,n);
     cout<<"the missing element is: "<< ans_missing<< endl;
 
