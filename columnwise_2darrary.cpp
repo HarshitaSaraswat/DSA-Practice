@@ -10,10 +10,10 @@ int main(){
     };
     
     for(int i=0;i<col;i++){
-        int sum=0;
+        int sum1=0;
         for(int j=0;j<row;j++){
-            sum+=arr[j][i];
+            sum1+=arr[j][i];
         }
-    cout<<sum<<endl;
+    cout<<sum1<<endl;
     }
 }
