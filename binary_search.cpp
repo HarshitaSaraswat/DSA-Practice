@@ -49,7 +49,7 @@ int main(){
     int ans_index=first_occurence(arr,n,target);
 
     if(ans_index==-1){
-        cout<<"element not found"<<endl;
+        cout<<"element not found at index"<<endl;
     }
     else{
         cout<<"the element is found at index : "<<ans_index<<endl;
