@@ -31,10 +31,10 @@ int main(){
     int ans_index=first_occurence(arr,n,target);
 
     if(ans_index==-1){
-        cout<<"element not found"<<endl;
+        cout<<" target element not found"<<endl;
     }
     else{
-        cout<<"the element is found at index : "<<ans_index<<endl;
+        cout<<"the target element is found at index : "<<ans_index<<endl;
     }
 
 
