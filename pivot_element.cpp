@@ -31,8 +31,8 @@ int max_pivot_element(int arr[],int n){
 
 int main(){
     int n=8;
-    int arr[]={14,15,16,18,2,4,6,8};
-    int ans=max_pivot_element(arr,n);
+    int arr1[]={14,15,16,18,2,4,6,8};
+    int ans=max_pivot_element(arr1,n);
     cout<<"the pivot element is: "<<ans<<endl;
 
     
